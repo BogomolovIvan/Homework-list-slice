@@ -4,7 +4,6 @@ import (
 	"awesomeProject/list"
 	"awesomeProject/slice"
 	"fmt"
-	//"awesomeProject/model"
 )
 
 func main() {
@@ -15,25 +14,22 @@ func main() {
 	l.Add(35)
 	l.Add(7)
 	l.Add(1)
-	//model.Delete(l, 3)
-	//model.Print(l)
+	l.Delete(3)
 	fmt.Println("Sort List")
-	//model.SortInc(l)
-	//l.SortIncLink()
-	//model.SortDec(l)
-	//l.SortDecLink()
-	//model.Print(l)
+	l.SortIncLink()
+	l.SortDecLink()
+	l.Print()
 
 	s := slice.Slice{}
-	l.Add(15)
-	l.Add(9)
-	l.Add(-2)
-	l.Add(35)
-	l.Add(7)
-	l.Add(1)
-	l.Print()
+	s.Insert(15)
+	s.Insert(9)
+	s.Insert(-2)
+	s.Insert(35)
+	s.Insert(7)
+	s.Insert(1)
+	s.Print()
 	fmt.Println("Sort List")
-	//model.SortInc(&s)
-	//model.SortDec(&s)
+	s.SortDec()
+	s.SortInc()
 	s.Print()
 }

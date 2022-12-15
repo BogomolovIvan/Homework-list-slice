@@ -128,3 +128,11 @@ func (l *List) SortDecrease() {
 	}
 	cn.nextNode.data, max.data = max.data, cn.nextNode.data
 }
+
+func (l *List) SortDecLink() {
+
+}
+
+func (l *List) SortIncLink() {
+
+}
